@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Birthday Celebration Invitation </title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'VT323', monospace;
+            background: #000;
+            color: #0f0;
+            line-height: 1.6;
+            font-size: 20px;
+            background-image: linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #000 0%, #001100 100%);
+            border-bottom: 1px solid #0f0;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2em;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0;
+            animation: pulse 2s infinite;
+        }
+        header p {
+            font-family: 'VT323', monospace;
+            font-size: 1.5em;
+            color: #0f0;
+            margin-top: 20px;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            margin: 30px 0;
+            padding: 30px;
+            background: rgba(0, 20, 0, 0.7);
+            border: 1px solid #0f0;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+            position: relative;
+        }
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #0f0, transparent);
+        }
+        h2 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.5em;
+            color: #0f0;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #0f0;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            margin: 15px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        ul li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #0f0;
+        }
+        .event-image img {
+            width: 100%;
+            border: 2px solid #0f0;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        .rsvp {
+            background: rgba(0, 40, 0, 0.9);
+            text-align: center;
+        }
+        .rsvp a, .contact a {
+            color: #0f0;
+            text-decoration: none;
+            border: 1px solid #0f0;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        .rsvp a:hover, .contact a:hover {
+            background: #0f0;
+            color: #000;
+            box-shadow: 0 0 10px #0f0;
+        }
+        .map {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #0f0;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+        }
+        @keyframes pulse {
+            0% { text-shadow: 0 0 5px #0f0; }
+            50% { text-shadow: 0 0 10px #0f0; }
+            100% { text-shadow: 0 0 5px #0f0; }
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.5em; }
+            section { padding: 20px; }
+            h2 { font-size: 1.2em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LEVEL UP EVENT!</h1>
+        <p>PRESS START TO JOIN THE ULTIMATE BIRTHDAY QUEST!</p>
+    </header>
+
+    <main>
+        <section class="event-image">
+            <img src="bday-decor.jpg" alt="Birthday decorations" style="width: 100%;">
+        </section>
+
+        <section class="event-details">
+            <h2> EVENT DETAILS </h2>
+            <ul>
+                <li><strong> Date: </strong> Tuesday, May 12, 2026 </li>
+                <li><strong>Time: </strong> 2:00 PM - 6:00 PM </li>
+                <li><strong>Venue: </strong> SM Mall of Asia </li>
+                <li><strong>Address: </strong> Mall of Asia Complex, J.W. Diokno Blvd, Pasay, Metro Manila, Philippines </li>
+            </ul>
+        </section>
+
+        <section class="what-to-bring">
+            <h2> PLAYER INVENTORY </h2>
+            <ul>
+                <li> Your presence (Prior) </li>
+                <li> Camera / Phones for capturing memories </li>
+                <li> Gifts </li>
+                <li> Power-Up Snacks </li>
+            </ul>
+        </section>
+
+        <section class="rsvp">
+            <h2> RSVP </h2>
+            <p> Please confirm your attendance by sending an email to: </p>
+            <p><a href="mailto:clanndanieldelrosario@email.com"> clanndanieldelrosario@email.com </a></p>
+            <p> Kindly RSVP before May 12, 2026 </p>
+        </section>
+
+        <section class="location">
+            <h2> LOCATION </h2>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.2999193430675!2d120.98214731744384!3d14.535168899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cbfdf45e3e51%3A0x47c3282b86372f24!2sSM%20Mall%20of%20Asia!5e0!3m2!1sen!2sph!4v1671434833446!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="contact">
+            <h2> CONTACT PERSON </h2>
+            <p><strong>Party Coordinator: </strong> Miku Nakano </p>
+            <p><strong>Phone: </strong> (123) 456-7890 </p>
+            <p><strong>Email: </strong> <a href="mailto:coordinator@email.com"> coordinator@email.com </a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p> We can't wait to celebrate with you! </p>
+    </footer>
+</body>
+</html>
